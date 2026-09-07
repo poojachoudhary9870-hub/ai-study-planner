@@ -1329,7 +1329,8 @@ function AIPlanner() {
       try {
         const response =
           await fetch(
-            "http://localhost:5000/api/generate-plan",
+            // "http://localhost:5000/api/generate-plan",
+            `${import.meta.env.VITE_API_URL}/api/generate-plan`,
             {
               method: "POST",
 
